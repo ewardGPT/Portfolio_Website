@@ -44,7 +44,7 @@ export const Resume = () => {
               GitHub
             </a>
             <a
-              href="https://www.linkedin.com"
+              href="https://www.linkedin.com/in/ervinwardiii/"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-primary transition-colors"
@@ -173,11 +173,13 @@ export const Resume = () => {
 
         {/* Download Button */}
         <div className="text-center opacity-0 animate-fade-in-delay-4">
+          <Link to="/resume" className="cosmic-button">
+              Download PDF Resume
+          </Link>
           <a
             href="/resume/Ervin_Ward_Resume.pdf"
             className="cosmic-button inline-flex items-center gap-2 text-lg"
           >
-            <Download className="h-5 w-5" />
             Download PDF Resume
           </a>
         </div>

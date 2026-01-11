@@ -19,9 +19,17 @@ export const HeroSection = () => {
                         that blend software engineering, AI, and modern web technologies.
                     </p>
                     <div className="opacity-0 animate-fade-in-delay-4">
-                        <a href="#projects" className="cosmic-button mt-2 inline-block">
-                            View My Work
-                        </a>
+                        <button
+                            onClick={() =>
+                            document.getElementById("projects")?.scrollIntoView({
+                            behavior: "smooth",
+                                })
+                            }
+                            className="cosmic-button mt-2 inline-block"
+                        >
+                                View My Work
+                        </button>
+
                     </div>                   
                 </div>
         </div>

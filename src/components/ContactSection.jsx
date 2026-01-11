@@ -48,19 +48,8 @@ export const ContactSection = () => {
                                 <div>
                                     <h4> Phone </h4>
                                     <a href="tel:8044125289" className="text-muted-foreground hover:text-primary transition-colors ">
-                                        804-412-5289
+                                        (703) 951 3019
                                     </a> 
-                                </div>
-                            </div>
-                            <div className="flex items-start space-x-4">
-                                <div className="p-3 rounded-full bg-primary/10">
-                                    <MapPin className="h-6 w-6 text-primary"/>
-                                </div>
-                                <div>
-                                    <h4> Location </h4>
-                                    <a href="mailto:eward27@gmu.edu" className="text-muted-foreground hover:text-primary transition-colors ">
-                                        Moseley, VA, United States of America
-                                    </a>
                                 </div>
                             </div>
                         </div>

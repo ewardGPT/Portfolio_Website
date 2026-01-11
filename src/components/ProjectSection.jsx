@@ -8,7 +8,7 @@ const projects = [
     description:
       "An AI-powered game that simulates a judge making decisions based on player inputs.",
     tags: ["Python", "TensorFlow", "Flask"],
-    image: "/projects/AI_game_photo.png",
+    image: `${import.meta.env.BASE_URL}projects/AI_game_photo.png`,
     githubURL: "https://github.com/ewardGPT/AI-Judge-Game",
   },
   {
@@ -17,7 +17,7 @@ const projects = [
     description:
       "A comprehensive guide and scripts for setting up Arch Linux with a focus on security and performance.",
     tags: ["Bash", "Linux", "Arch"],
-    image: "/projects/Arch_Setup.jpg",
+    image: `${import.meta.env.BASE_URL}projects/Arch_Setup.jpg`,
     githubURL:
       "https://github.com/ewardGPT/OptiPlex-9020-Revive-Arch-Linux-Hyperland-Workstation-Build",
   },
@@ -27,7 +27,15 @@ const projects = [
     description:
       "A multiplayer Roblox game where players engage in thrilling manhunt scenarios.",
     tags: ["Roblox", "Lua", "Game Development"],
-    image: "/projects/Roblox_Game.png",
+    image: `${import.meta.env.BASE_URL}projects/Roblox_Game.png`,
+  },
+  {
+    id: 4,
+    title: "Home Cloud Observability Platform",
+    description:
+      "A production-style observability stack deployed on a Proxmox VM.",
+    tags: ["Docker", "Prometheus", "VM", "Grafana", "Kubernetes", "Linux"],
+    image: `${import.meta.env.BASE_URL}projects/pve_grafana.png`,
   },
 ];
 
