@@ -1,31 +1,31 @@
 import { useState } from "react";
-import {cn} from "@/lib/utils";
+import { cn } from "@/lib/utils";
 
 const skills = [
-  // Frontend
-  { name: "JavaScript", level: 45, category: "frontend" },
-  { name: "React", level: 35, category: "frontend" },
-  { name: "HTML/CSS", level: 65, category: "frontend" },
+    // Frontend
+    { name: "JavaScript", level: 45, category: "frontend" },
+    { name: "React", level: 35, category: "frontend" },
+    { name: "HTML/CSS", level: 65, category: "frontend" },
 
-  // Backend
-  { name: "Python", level: 65, category: "backend" },
-  { name: "Node.js", level: 30, category: "backend" },
+    // Backend
+    { name: "Python", level: 65, category: "backend" },
+    { name: "Node.js", level: 30, category: "backend" },
 
-  // Systems & Cyber
-  { name: "Linux", level: 60, category: "systems" },
-  { name: "Networking Fundamentals", level: 60, category: "systems" },
-  { name: "VPN & DNS Concepts", level: 55, category: "systems" },
+    // Systems & Cyber
+    { name: "Linux", level: 60, category: "systems" },
+    { name: "Networking Fundamentals", level: 60, category: "systems" },
+    { name: "VPN & DNS Concepts", level: 55, category: "systems" },
 
-  // Tools
-  { name: "Git", level: 60, category: "tools" },
-  { name: "GitHub", level: 55, category: "tools" },
-  { name: "VS Code", level: 65, category: "tools" },
-  { name: "Bash", level: 30, category: "tools" },
+    // Tools
+    { name: "Git", level: 60, category: "tools" },
+    { name: "GitHub", level: 55, category: "tools" },
+    { name: "VS Code", level: 65, category: "tools" },
+    { name: "Bash", level: 30, category: "tools" },
 
-  // DevOps / Cloud
-  { name: "Docker", level: 30, category: "devops" },
-  { name: "AWS", level: 25, category: "devops" },
-  { name: "Azure", level: 25, category: "devops" },
+    // DevOps / Cloud
+    { name: "Docker", level: 30, category: "devops" },
+    { name: "AWS", level: 25, category: "devops" },
+    { name: "Azure", level: 25, category: "devops" },
 ];
 
 const categories = ["all", "frontend", "backend", "systems", "tools", "devops"];
@@ -37,9 +37,9 @@ export const SkillsSection = () => {
         (skills) => activeCategory === "all" || skills.category === activeCategory
     );
     return (
-        <section 
-        id="skills" 
-        className="py-24 px-4 relative bg-secondary/30"
+        <section
+            id="skills"
+            className="py-24 px-4 relative bg-secondary/30"
         >
             <div className="container mx-auto max-w-5xl">
                 <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
@@ -48,11 +48,11 @@ export const SkillsSection = () => {
 
                 <div className="flex flex-wrap justify-center mb-12 gap-4">
                     {categories.map((category, key) => (
-                        <button 
-                            key={key} 
+                        <button
+                            key={key}
                             onClick={() => setActiveCategory(category)}
                             className={cn("px-5 py-2 rounded-full transition-colors duration-300 capitalize",
-                                activeCategory === category ? "bg-primary text-primary-foreground" : "bg-secondary/70 text-foreground hover:bd-secondary"
+                                activeCategory === category ? "bg-primary text-primary-foreground" : "bg-secondary/70 text-foreground hover:bg-secondary"
                             )}
 
                         >
@@ -68,14 +68,14 @@ export const SkillsSection = () => {
                                 <h3 className="font-semibold text-lg"> {skill.name} </h3>
                             </div>
                             <div className="w-full bg-secondary/50 h-2 rounded-full overflow-hidden">
-                                <div 
-                                    className="bg-primary h-2 rounded-full origin-left animate-[grow_1.5s_ease-out]" 
-                                    style={{width: skill.level + "%"}}
+                                <div
+                                    className="bg-primary h-2 rounded-full origin-left animate-[grow_1.5s_ease-out]"
+                                    style={{ width: skill.level + "%" }}
                                 />
                             </div>
                             <div className="text-right mt-1">
                                 <span className="text-sm text-muted-foreground"> {skill.level}%</span>
-                            </div>    
+                            </div>
                         </div>
                     ))}
                 </div>

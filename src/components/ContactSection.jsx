@@ -10,7 +10,7 @@ export const ContactSection = () => {
     const handleSubmit = (e) => {
         e.preventDefault()
 
-        SetTimeout(() => {
+        setTimeout(() => {
 
         }, 1500)
     }
@@ -18,7 +18,7 @@ export const ContactSection = () => {
         <section id="contact" className="py-24 px-4 relative bg-secondary/30">
             <div className="container mx-auto max-w-5xl">
                 <h2 className="text-3xl md:text-4xl font-bold text-center mb-4"> 
-                    Get In <span className="teprimaryxt-accent">Touch</span>
+                    Get In <span className="text-primary">Touch</span>
                 </h2>
                 <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
                     Have a project in mind or want to collaborate? Feel free to reach out.

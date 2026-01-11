@@ -36,6 +36,7 @@ const projects = [
       "A production-style observability stack deployed on a Proxmox VM.",
     tags: ["Docker", "Prometheus", "VM", "Grafana", "Kubernetes", "Linux"],
     image: `${import.meta.env.BASE_URL}projects/pve_grafana.png`,
+    githubURL: "https://github.com/ewardGPT/home-cloud-observability",
   },
 ];
 
@@ -54,7 +55,7 @@ export const ProjectSection = () => {
         </p>
 
         {/* Projects Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {projects.map((project) => (
             <div
               key={project.id}
@@ -127,9 +128,9 @@ export const ProjectSection = () => {
         </div>
 
         <div className="text-center mt-12">
-            <a className="cosmic-button w-fit flex items-center mx-auto gap-2" href="https://github.com/ewardGPT" target="_blank">
-                Check My GitHub for More Projects! <ArrowRight size={16} className="inline-block ml-1"/>
-            </a>
+          <a className="cosmic-button w-fit flex items-center mx-auto gap-2" href="https://github.com/ewardGPT" target="_blank">
+            Check My GitHub for More Projects! <ArrowRight size={16} className="inline-block ml-1" />
+          </a>
 
         </div>
       </div>
