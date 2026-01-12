@@ -6,8 +6,8 @@ import path from "path";
 export default defineConfig({
   plugins: [react(), tailwindcss()],
 
-  // MUST match your GitHub repo name exactly
-  base: "/Portfolio_Website/",
+  // For custom domain, use root path
+  base: "/",
 
   resolve: {
     alias: {

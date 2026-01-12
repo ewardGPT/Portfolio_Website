@@ -1,4 +1,4 @@
-import { Download } from "lucide-react";
+import { Download, ArrowLeft } from "lucide-react";
 import { ThemeToggle } from "@/components/ThemeToggle";
 
 export const Resume = () => {
@@ -11,6 +11,21 @@ export const Resume = () => {
         transition-colors duration-500
       "
     >
+      {/* Back to Home Button */}
+      <div className="absolute top-6 left-6 z-50">
+        <a
+          href="/#/"
+          className="inline-flex items-center gap-2 px-4 py-2 rounded-lg
+                     bg-card border border-border
+                     hover:border-primary hover:text-primary
+                     transition-colors duration-300"
+          aria-label="Back to Home"
+        >
+          <ArrowLeft size={20} />
+          <span className="hidden sm:inline">Back to Home</span>
+        </a>
+      </div>
+
       {/* Theme Toggle */}
       <div className="absolute top-6 right-6 z-50">
         <ThemeToggle />
@@ -173,13 +188,12 @@ export const Resume = () => {
 
         {/* Download Button */}
         <div className="text-center opacity-0 animate-fade-in-delay-4">
-          <Link to="/resume" className="cosmic-button">
-              Download PDF Resume
-          </Link>
           <a
-            href="/resume/Ervin_Ward_Resume.pdf"
+            href={`${import.meta.env.BASE_URL}resume/Ervin_Ward_Resume.pdf`}
+            download="Ervin_Ward_Resume.pdf"
             className="cosmic-button inline-flex items-center gap-2 text-lg"
           >
+            <Download size={20} />
             Download PDF Resume
           </a>
         </div>

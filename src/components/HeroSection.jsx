@@ -2,8 +2,8 @@ import { ArrowDown } from 'lucide-react';
 
 export const HeroSection = () => {
     return (
-        <section 
-            id="hero" 
+        <section
+            id="hero"
             className="relative min-h-screen flex flex-col items-center justify-center px-4"
         >
             <div className="container max-w-4xl mx-auto text-center z-10">
@@ -14,33 +14,33 @@ export const HeroSection = () => {
                         <span className="text-gradient  ml-2 opacity-0 animate-fade-in-delay-2"> Ward</span>
                     </h1>
                     <p className="text-lg md:text-xl text-muted-foreground max-2-2xl mx-auto opacity-0 animate-fade-in-delay-3">
-                        I’m an Applied Computer Science student specializing in Artificial Intelligence 
-                        with a strong interest in cybersecurity and full-stack development. I build secure, scalable projects 
-                        that blend software engineering, AI, and modern web technologies.
+                        I design and build <strong>scalable cloud architectures</strong> and <strong>AI-powered systems</strong> with a focus on
+                        security, observability, and production-grade infrastructure. Specializing in cloud engineering,
+                        distributed systems, and modern DevOps practices.
                     </p>
                     <div className="opacity-0 animate-fade-in-delay-4">
                         <button
                             onClick={() =>
-                            document.getElementById("projects")?.scrollIntoView({
-                            behavior: "smooth",
+                                document.getElementById("projects")?.scrollIntoView({
+                                    behavior: "smooth",
                                 })
                             }
                             className="cosmic-button mt-2 inline-block"
                         >
-                                View My Work
+                            View My Work
                         </button>
 
-                    </div>                   
+                    </div>
                 </div>
-        </div>
+            </div>
 
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex flex-col items-center animate-bounce">
-            {/* Scroll Down Indicator */}
-            <span className="text-sm text-muted-foreground mb-2"> Scroll</span>
-            <ArrowDown className="h-5 w-5 text-primary" />
-        </div>
+            <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex flex-col items-center animate-bounce">
+                {/* Scroll Down Indicator */}
+                <span className="text-sm text-muted-foreground mb-2"> Scroll</span>
+                <ArrowDown className="h-5 w-5 text-primary" />
+            </div>
 
 
-    </section>
+        </section>
     );
 };

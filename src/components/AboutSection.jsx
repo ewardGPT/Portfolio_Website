@@ -17,11 +17,11 @@ export const AboutSection = () => {
           {/* LEFT COLUMN */}
           <div className="space-y-6">
             <h3 className="text-2xl font-semibold">
-              Aspiring Cloud Engineer & Software Engineer
+              Cloud & AI Systems <span className="text-primary">Architect</span>
             </h3>
 
             <p className="text-muted-foreground">
-              I’m an Applied Computer Science student with a concentration in
+              I'm an Applied Computer Science student with a concentration in
               Artificial Intelligence, focused on building practical and
               well-engineered software. My interests include cybersecurity,
               full-stack development, and applied AI, and I enjoy working on
@@ -30,11 +30,10 @@ export const AboutSection = () => {
             </p>
 
             <p className="text-muted-foreground">
-              Outside of coursework, I spend my time developing personal
-              projects, experimenting with new technologies, and strengthening
-              my fundamentals in programming and systems. I’m driven by
-              continuous improvement and enjoy turning complex ideas into
-              scalable, real-world solutions.
+              Outside of coursework, I spend my time designing production-style
+              infrastructure projects like <strong>observability platforms</strong> and <strong>hardened security gateways</strong>,
+              strengthening my fundamentals in cloud architecture, distributed systems, and Infrastructure as Code.
+              I'm driven by building resilient, automated solutions that scale.
             </p>
 
             {/* Buttons */}
@@ -58,18 +57,18 @@ export const AboutSection = () => {
 
           {/* RIGHT COLUMN */}
           <div className="grid grid-cols-1 gap-6">
-            {/* Cloud Engineering */}
+            {/* Cloud Architecture */}
             <div className="gradient-border p-6 card-hover bg-card border border-border">
               <div className="flex items-start gap-4">
                 <div className="p-3 rounded-full bg-primary/10">
                   <Code className="h-6 w-6 text-primary" />
                 </div>
                 <div className="text-left">
-                  <h4 className="font-semibold text-lg">Cloud Engineering</h4>
+                  <h4 className="font-semibold text-lg">Cloud Architecture</h4>
                   <p className="text-muted-foreground">
-                    Gained hands-on experience deploying and managing services
-                    in cloud-style environments using Linux and modern DevOps
-                    tools.
+                    Design and deploy production-grade cloud infrastructure using
+                    container orchestration, Infrastructure as Code, and automated
+                    CI/CD pipelines on Linux-based environments.
                   </p>
                 </div>
               </div>

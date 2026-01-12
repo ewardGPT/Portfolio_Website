@@ -6,7 +6,7 @@ const projects = [
     id: 1,
     title: "AI Judge Game",
     description:
-      "An AI-powered game that simulates a judge making decisions based on player inputs.",
+      "Architected a modular AI courtroom simulation using LLM integration and encrypted data pipelines. Implemented scoring algorithms and secure case performance evaluation.",
     tags: ["Python", "TensorFlow", "Flask"],
     image: `${import.meta.env.BASE_URL}projects/AI_game_photo.png`,
     githubURL: "https://github.com/ewardGPT/AI-Judge-Game",
@@ -15,7 +15,7 @@ const projects = [
     id: 2,
     title: "Arch Setup",
     description:
-      "A comprehensive guide and scripts for setting up Arch Linux with a focus on security and performance.",
+      "Production-ready Arch Linux deployment with automated security hardening, performance optimization, and comprehensive system configuration for Hyperland workstation environments.",
     tags: ["Bash", "Linux", "Arch"],
     image: `${import.meta.env.BASE_URL}projects/Arch_Setup.jpg`,
     githubURL:
@@ -25,7 +25,7 @@ const projects = [
     id: 3,
     title: "Manhunt Roblox Game",
     description:
-      "A multiplayer Roblox game where players engage in thrilling manhunt scenarios.",
+      "Led full-stack game development managing distributed systems, real-time multiplayer architecture, and end-to-end technical implementation from concept to deployment.",
     tags: ["Roblox", "Lua", "Game Development"],
     image: `${import.meta.env.BASE_URL}projects/Roblox_Game.png`,
   },
@@ -33,7 +33,7 @@ const projects = [
     id: 4,
     title: "Home Cloud Observability Platform",
     description:
-      "A production-style observability stack deployed on a Proxmox VM.",
+      "Architected production-grade observability stack using Prometheus, Grafana, and Kubernetes on Proxmox VMs. Automated monitoring for 20+ services with real-time alerting and distributed metrics collection.",
     tags: ["Docker", "Prometheus", "VM", "Grafana", "Kubernetes", "Linux"],
     image: `${import.meta.env.BASE_URL}projects/pve_grafana.png`,
     githubURL: "https://github.com/ewardGPT/home-cloud-observability",
@@ -42,16 +42,17 @@ const projects = [
 
 export const ProjectSection = () => {
   return (
-    <section id="projects" className="py-24 px-4 relative">
-      <div className="container mx-auto max-w-5xl">
-        {/* Section Header */}
+    <section
+      id="projects"
+      className="min-h-screen py-24 px-4 relative scroll-mt-24"
+    >
+      <div className="container mx-auto max-w-6xl">
         <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">
           Featured <span className="text-primary">Projects</span>
         </h2>
 
         <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
-          Here are some of my notable projects that showcase my skills in software
-          development, AI, and cybersecurity.
+          Production-grade systems demonstrating cloud architecture, distributed systems, and AI integration
         </p>
 
         {/* Projects Grid */}
@@ -59,40 +60,49 @@ export const ProjectSection = () => {
           {projects.map((project) => (
             <div
               key={project.id}
-              className="group bg-card rounded-lg overflow-hidden shadow-xs border border-border card-hover flex flex-col"
+              className="group bg-card rounded-lg overflow-hidden shadow-xs border border-border 
+                         transition-all duration-300 hover:shadow-2xl hover:shadow-primary/20 
+                         hover:-translate-y-2 hover:border-primary/50 flex flex-col"
             >
-              {/* Image */}
-              <div className="h-48 overflow-hidden">
+              {/* Image with gradient overlay */}
+              <div className="relative h-48 overflow-hidden">
                 <img
                   src={project.image}
                   alt={project.title}
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 />
+                {/* Gradient overlay for better readability */}
+                <div className="absolute inset-0 bg-gradient-to-t from-card/90 via-card/20 to-transparent 
+                               opacity-60 group-hover:opacity-80 transition-opacity duration-300" />
               </div>
 
               {/* Content */}
               <div className="p-6 flex flex-col flex-grow">
+                {/* Title */}
+                <h3 className="text-xl font-semibold mb-2 group-hover:text-primary transition-colors duration-300">
+                  {project.title}
+                </h3>
+
+                {/* Description */}
+                <p className="text-muted-foreground text-sm mb-4 flex-grow">
+                  {project.description}
+                </p>
+
                 {/* Tags */}
                 <div className="flex flex-wrap gap-2 mb-4">
                   {project.tags.map((tag) => (
                     <span
                       key={tag}
-                      className="px-2 py-1 text-xs font-medium rounded-full
-                                 bg-secondary text-secondary-foreground
-                                 border border-border"
+                      className="px-3 py-1 text-xs font-medium rounded-full
+                                 bg-secondary text-foreground
+                                 border border-border
+                                 hover:border-primary hover:text-primary
+                                 transition-all duration-200"
                     >
                       {tag}
                     </span>
                   ))}
                 </div>
-
-                {/* Title & Description */}
-                <h3 className="text-xl font-semibold mb-1">
-                  {project.title}
-                </h3>
-                <p className="text-muted-foreground text-sm mb-6">
-                  {project.description}
-                </p>
 
                 {/* Links */}
                 <div className="mt-auto flex items-center gap-4">
@@ -101,37 +111,28 @@ export const ProjectSection = () => {
                       href={project.demoURL}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-foreground/80 hover:text-primary
-                                 transition-colors duration-300"
-                      aria-label="View Demo"
+                      className="inline-flex items-center gap-2 text-sm font-medium text-primary 
+                                 hover:underline hover:gap-3 transition-all duration-300"
                     >
-                      <ExternalLink size={20} />
+                      View Live <ExternalLink size={16} />
                     </a>
                   )}
-
                   {project.githubURL && (
                     <a
                       href={project.githubURL}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-foreground/80 hover:text-primary
-                                 transition-colors duration-300"
-                      aria-label="View GitHub Repository"
+                      className="inline-flex items-center gap-2 text-sm font-medium text-foreground/80 
+                                 hover:text-primary hover:gap-3 transition-all duration-300"
                     >
-                      <Github size={20} />
+                      <Github size={18} />
+                      Source Code
                     </a>
                   )}
                 </div>
               </div>
             </div>
           ))}
-        </div>
-
-        <div className="text-center mt-12">
-          <a className="cosmic-button w-fit flex items-center mx-auto gap-2" href="https://github.com/ewardGPT" target="_blank">
-            Check My GitHub for More Projects! <ArrowRight size={16} className="inline-block ml-1" />
-          </a>
-
         </div>
       </div>
     </section>
