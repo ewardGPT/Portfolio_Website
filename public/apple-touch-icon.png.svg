@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="180" height="180" viewBox="0 0 180 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="180" height="180" rx="40" fill="#8B5CF6"/>
+  
+  <!-- Letter 'E' -->
+  <path d="M50 50h80v20H70v20h50v20H70v30h60v20H50V50z" fill="white"/>
+  
+  <!-- Cloud/circuit accent -->
+  <circle cx="140" cy="50" r="12" fill="white" opacity="0.5"/>
+  <circle cx="155" cy="55" r="8" fill="white" opacity="0.5"/>
+  <circle cx="150" cy="45" r="6" fill="white" opacity="0.5"/>
+</svg>
