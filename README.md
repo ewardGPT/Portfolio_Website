@@ -292,7 +292,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 Ervin Ward - Cloud & AI Systems Architect
 
 * 🌐 Portfolio: [ervinward.com](https://ervinward.com)
-* 💼 LinkedIn: [linkedin.com/in/ervinward](https://linkedin.com/in/ervinwardiii)
+* 💼 LinkedIn: [linkedin.com/in/ervinwardiii](https://linkedin.com/in/ervinwardiii)
 * 🐙 GitHub: [@ewardGPT](https://github.com/ewardGPT)
 * 📧 Email: ervin.ward@example.com
 
@@ -324,7 +324,7 @@ Project Link: [https://github.com/ewardGPT/Portfolio_Website](https://github.com
 [deployed-shield]: https://img.shields.io/badge/Deployed-Live-success?style=for-the-badge
 [deployed-url]: https://ervinward.com
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/ervinward
+[linkedin-url]: https://linkedin.com/in/ervinwardiii
 [license-shield]: https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge
 [license-url]: https://github.com/ewardGPT/Portfolio_Website/blob/master/LICENSE
 [product-screenshot]: https://via.placeholder.com/800x400?text=Portfolio+Screenshot
