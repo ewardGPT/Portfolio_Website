@@ -42,7 +42,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Portfolio Screenshot][product-screenshot]](screenshots/portfolio.png)
+[![Portfolio Screenshot][product-screenshot]](.screenshots/portfolio.png)
 
 A modern, responsive portfolio website built to showcase cloud architecture expertise, AI system design, and production infrastructure projects. Designed with professional aesthetics and optimized for performance and accessibility.
 
