@@ -292,7 +292,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 Ervin Ward - Cloud & AI Systems Architect
 
 * 🌐 Portfolio: [ervinward.com](https://ervinward.com)
-* 💼 LinkedIn: [linkedin.com/in/ervinward](https://linkedin.com/in/ervinward)
+* 💼 LinkedIn: [linkedin.com/in/ervinward](https://linkedin.com/in/ervinwardiii)
 * 🐙 GitHub: [@ewardGPT](https://github.com/ewardGPT)
 * 📧 Email: ervin.ward@example.com
 
