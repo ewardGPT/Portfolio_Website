@@ -93,7 +93,7 @@ src/
 
 ## Questions?
 
-Feel free to open an issue for any questions or reach out on [LinkedIn](https://linkedin.com/in/ervinward).
+Feel free to open an issue for any questions or reach out on [LinkedIn](https://linkedin.com/in/ervinwardiii).
 
 ---
 

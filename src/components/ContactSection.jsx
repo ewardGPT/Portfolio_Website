@@ -1,9 +1,5 @@
-import { Mail } from "lucide-react";
-import { Phone } from "lucide-react";
-import { MapPin } from "lucide-react";
-import {Linkedin} from "lucide-react";
-import {cn} from '@/lib/utils';
-import {Send} from "lucide-react";
+import { Mail, Phone, MapPin, Linkedin, Github, Twitter, Send } from "lucide-react";
+import { cn } from '@/lib/utils';
 
 export const ContactSection = () => {
 
@@ -17,7 +13,7 @@ export const ContactSection = () => {
     return (
         <section id="contact" className="py-24 px-4 relative bg-secondary/30">
             <div className="container mx-auto max-w-5xl">
-                <h2 className="text-3xl md:text-4xl font-bold text-center mb-4"> 
+                <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">
                     Get In <span className="text-primary">Touch</span>
                 </h2>
                 <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
@@ -31,7 +27,7 @@ export const ContactSection = () => {
                         <div className="space-y-6 justify-center">
                             <div className="flex items-start space-x-4">
                                 <div className="p-3 rounded-full bg-primary/10">
-                                    <Mail className="h-6 w-6 text-primary"/>
+                                    <Mail className="h-6 w-6 text-primary" />
                                 </div>
                                 <div>
                                     <h4> Email </h4>
@@ -43,13 +39,13 @@ export const ContactSection = () => {
                             </div>
                             <div className="flex items-start space-x-4">
                                 <div className="p-3 rounded-full bg-primary/10">
-                                    <Phone className="h-6 w-6 text-primary"/>
+                                    <Phone className="h-6 w-6 text-primary" />
                                 </div>
                                 <div>
                                     <h4> Phone </h4>
                                     <a href="tel:8044125289" className="text-muted-foreground hover:text-primary transition-colors ">
                                         (703) 951 3019
-                                    </a> 
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -57,8 +53,14 @@ export const ContactSection = () => {
                         <div className="pt-8">
                             <h4> Connect With Me</h4>
                             <div className="flex space-x-4 justify-center">
-                                <a href="https://www.linkedin.com/in/ervinwardiii/" target="_blank">
-                                    <Linkedin/>
+                                <a href="https://www.linkedin.com/in/ervinwardiii/" target="_blank" aria-label="LinkedIn" className="hover:text-primary transition-colors">
+                                    <Linkedin />
+                                </a>
+                                <a href="https://github.com/ewardGPT" target="_blank" aria-label="GitHub" className="hover:text-primary transition-colors">
+                                    <Github />
+                                </a>
+                                <a href="https://x.com/ewardGPT" target="_blank" aria-label="Twitter" className="hover:text-primary transition-colors">
+                                    <Twitter />
                                 </a>
                             </div>
                         </div>
@@ -77,11 +79,11 @@ export const ContactSection = () => {
                                     className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden focus:ring-2 focus:ring-primary"
                                     placeholder="John Doe"
                                 >
-                                
+
                                 </input>
 
                             </div>
-                                                        <div>
+                            <div>
                                 <label htmlFor="email" className="block text-sm font-medium mb-2"> Your Email</label>
                                 <input
                                     type="email"
@@ -90,11 +92,11 @@ export const ContactSection = () => {
                                     className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden focus:ring-2 focus:ring-primary"
                                     placeholder="johndoe@gmail.com"
                                 >
-                                
+
                                 </input>
 
                             </div>
-                                                        <div>
+                            <div>
                                 <label htmlFor="message" className="block text-sm font-medium mb-2"> Your Message</label>
                                 <textarea
                                     id="message"
@@ -102,7 +104,7 @@ export const ContactSection = () => {
                                     className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden focus:ring-2 focus:ring-primary resize-none"
                                     placeholder="Hello, I'd like to talk about..."
                                 >
-                                
+
                                 </textarea>
 
                             </div>
@@ -110,7 +112,7 @@ export const ContactSection = () => {
 
                             )}>
                                 Send message
-                                <Send size={16}/>
+                                <Send size={16} />
                             </button>
                         </form>
 

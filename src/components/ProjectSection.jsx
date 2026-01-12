@@ -33,8 +33,8 @@ const projects = [
     id: 4,
     title: "Home Cloud Observability Platform",
     description:
-      "Architected production-grade observability stack using Prometheus, Grafana, and Kubernetes on Proxmox VMs. Automated monitoring for 20+ services with real-time alerting and distributed metrics collection.",
-    tags: ["Docker", "Prometheus", "VM", "Grafana", "Kubernetes", "Linux"],
+      "Production-grade observability stack deployed on Proxmox VE using Docker Compose. Orchestrates Prometheus, Grafana, Loki (for logs), and Uptime Kuma to monitor 20+ services with real-time alerting. Features secure LAN-only access, hardware metric dashboards, and automated status reporting.",
+    tags: ["Docker", "Prometheus", "Grafana", "Loki", "Uptime Kuma", "Proxmox"],
     image: `${import.meta.env.BASE_URL}projects/pve_grafana.png`,
     githubURL: "https://github.com/ewardGPT/home-cloud-observability",
   },
@@ -58,7 +58,7 @@ export const ProjectSection = () => {
         {/* Projects Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {projects.map((project) => (
-            <div
+            <article
               key={project.id}
               className="group bg-card rounded-lg overflow-hidden shadow-xs border border-border 
                          transition-all duration-300 hover:shadow-2xl hover:shadow-primary/20 
@@ -131,7 +131,7 @@ export const ProjectSection = () => {
                   )}
                 </div>
               </div>
-            </div>
+            </article>
           ))}
         </div>
       </div>

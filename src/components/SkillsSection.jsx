@@ -59,7 +59,7 @@ export const SkillsSection = () => {
                     {skillDomains.map((domain) => {
                         const IconComponent = domain.icon;
                         return (
-                            <div
+                            <article
                                 key={domain.id}
                                 className="bg-card p-6 rounded-lg shadow-xs card-hover border border-border group"
                             >
@@ -86,7 +86,7 @@ export const SkillsSection = () => {
                                         </span>
                                     ))}
                                 </div>
-                            </div>
+                            </article>
                         );
                     })}
                 </div>
